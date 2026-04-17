@@ -9,6 +9,8 @@ import Products from "./pages/Products";
 import Categories from "./pages/Categories";
 import Fournisseurs from "./pages/Fournisseurs";
 import Stock from "./pages/Stock";
+import Achats from "./pages/Achats";
+import Ventes from "./pages/Ventes";
 import Rapports from "./pages/Rapports";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
@@ -37,6 +39,8 @@ const AppRoutes = () => (
     <Route path="/categories" element={<ProtectedRoute><Categories /></ProtectedRoute>} />
     <Route path="/fournisseurs" element={<ProtectedRoute><Fournisseurs /></ProtectedRoute>} />
     <Route path="/stock" element={<ProtectedRoute><Stock /></ProtectedRoute>} />
+    <Route path="/achats" element={<ProtectedRoute><Achats /></ProtectedRoute>} />
+    <Route path="/ventes" element={<ProtectedRoute><Ventes /></ProtectedRoute>} />
     <Route path="/rapports" element={<ProtectedRoute><Rapports /></ProtectedRoute>} />
     <Route path="*" element={<NotFound />} />
   </Routes>
