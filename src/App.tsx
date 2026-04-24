@@ -12,6 +12,7 @@ import Stock from "./pages/Stock";
 import Achats from "./pages/Achats";
 import Ventes from "./pages/Ventes";
 import Rapports from "./pages/Rapports";
+import Utilisateurs from "./pages/Utilisateurs";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
@@ -42,6 +43,7 @@ const AppRoutes = () => (
     <Route path="/achats" element={<ProtectedRoute><Achats /></ProtectedRoute>} />
     <Route path="/ventes" element={<ProtectedRoute><Ventes /></ProtectedRoute>} />
     <Route path="/rapports" element={<ProtectedRoute><Rapports /></ProtectedRoute>} />
+    <Route path="/utilisateurs" element={<ProtectedRoute><Utilisateurs /></ProtectedRoute>} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );
